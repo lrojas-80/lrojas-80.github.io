@@ -46,7 +46,7 @@ let links = document.querySelectorAll(".close");
         //set time out despues de n tiempo..1 vez
         //set interval lo hace en n tiempo n cantidad de veces
         setTimeout(function(){
-            location.href = "/";
+            location.href = "/profesiones";
         },700);
         return false;
     });
