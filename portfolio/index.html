@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Luis Ariel Rojas</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">{lar}</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi"onclick="seleccionar()" >SOBRE MI</a></li>
+                    <li><a href="#skills"onclick="seleccionar()" >SKILLS</a></li>
+                    <li><a href="#curriculum"onclick="seleccionar()" >CURRICULUM</a></li>
+                    <li><a href="#portfolio"onclick="seleccionar()" >PORTFOLIO</a></li>
+                    <li><a href="#contacto"onclick="seleccionar()" >CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="./img/3135768.png" alt="">
+            </div>
+            <h1>Luis Ariel Rojas</h1>
+            <h2>Desarrollo Frontend</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, Luis Rojas,</span> Soy desarrollador Frontend/ Backend, en continuo aprendizaje.
+                 Les presento una breve descripción sobre mi vida profesional y algunos proyectos creados.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            24-09-1980
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            1127233714
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            luis.rojas.240980@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.luisrojas.com.ar
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Atagualpa Yupanqui, SN, Villa Yacanto de Calamuchita, Córdoba, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <i class="fa-brands fa-square-js"></i>
+
+                    </div>
+                    <div class="skill">
+                        
+                        <span>HTML & CSS</span>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+
+                    </div>
+                    <div class="skill">
+                        
+                        <span>React</span> <i class="fa-brands fa-react"></i>
+
+                    </div>
+                    <div class="skill">
+                        <span>SQL / MySQL</span>
+                        <i class="fa-solid fa-database"></i>
+
+                    </div>
+                    <div class="skill">
+                        <span>WordPress</span>
+                        <i class="fa-brands fa-wordpress"></i>
+
+                    </div>
+
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <i class="fa-solid fa-user-plus"></i>
+
+
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <i class="fa-solid fa-people-group"></i>
+
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <i class="fa-solid fa-lightbulb"></i>
+
+                    </div>
+
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <i class="fa-solid fa-diagram-project"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>CIentifico de datos</h4>
+                        <span class="casa">Código Facilito</span>
+                        <span class="fecha">2023 - Actualidad</span>
+                        <p>BootCamp de Científico de Datos, cursando actualmente.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollo Fullstack</h4>
+                        <span class="casa">Código Facilito</span>
+                        <span class="fecha">2022 - Actualidad</span>
+                        <p>Cursando actualmente y en continuo aprendizaje</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollo React</h4>
+                        <span class="casa">FeeCodeCamp</span>
+                        <span class="fecha">2023 - Actualidad</span>
+                        <p>Curso online en desarrollo en React</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso Profesional de Bases de Datos</h4>
+                        <span class="casa">Código Facilito</span>
+                        <span class="fecha">2023 - Actualidad</span>
+                        <p>Curso online profesional de bases de datos (SQL/MySQL)</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Infraestructura y Operaciones IT</h4>
+                        <span class="casa">Flechabus</span>
+                        <span class="fecha">2019 - Actualidad</span>
+                        <p>Me desempeño como jefe del área, con 7 personas a cargo</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Analista de comunicaciones y DBA</h4>
+                        <span class="casa">Emergencias Médicas</span>
+                        <span class="fecha">2017 - 2019</span>
+                        <p>Analista de comunicaciónes, manejo de la plataforma Neotel y Administrador de Bases de Datos</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Analista en telecomunicaciones</h4>
+                        <span class="casa">Teleperformance</span>
+                        <span class="fecha">2013 - 2017</span>
+                        <p>Tareas DBA, administración CRM Neotel</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Responsable Soporte ténico</h4>
+                        <span class="casa">Teleperformance</span>
+                        <span class="fecha">2008 - 2013</span>
+                        <p>Responsable del equipo de soporte técnico</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+
+        </div>
+
+     </section>
+
+    <!-- SECCION PORTFOLIO -->
+         <!--Sección portfolio-->
+         <section id="portfolio" class="portfolio">
+            <div class="contenido seccion">
+                <h2>Portfolio</h2>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="./img/proyectos/cv.PNG" alt="">
+                        <div class="overlay">
+                            <h3>Curriculum Vitae</h3>
+                            <p>Creado con lenguaje HTML y CSS</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./img/proyectos/tabla.PNG" alt="">
+                        <div class="overlay">
+                            <h3>Tabla "Destacados"</h3>
+                            <p>Creado con lenguaje HTML y CSS</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./img/proyectos/webdesing.PNG" alt="">
+                        <div class="overlay">
+                            <h3>Página WEB / Portfolio personal</h3>
+                            <p>Creado con lenguaje HTML, CSS y JS</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./img/proyectos/cv.PNG" alt="">
+                        <div class="overlay">
+                            <h3>Curriculum Vitae</h3>
+                            <p>Creado con lenguaje HTML y CSS</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="./img/proyectos/cv.PNG" alt="">
+                        <div class="overlay">
+                            <h3>Curriculum Vitae</h3>
+                            <p>Creado con lenguaje HTML y CSS</p>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+            </div>
+         </section>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <form id="form" class="col">
+                    <input name="nombre" type="text" placeholder="Tú Nombre">
+                    <input name="numero" type="text" placeholder="Número telefónico">
+                    <input name="mail" type="text" placeholder="Dirección de correo">
+                    <input name="asunto" type="text" placeholder="Tema">
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </form>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="./img/ubicacion.PNG" alt="" >
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Atagualpa Yupanqui, SN, Villa Yacanto de Calamuchita, Córdoba, Argentina
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-whatsapp"></i>
+                                1127233714 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: luis.rojas.240980@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
