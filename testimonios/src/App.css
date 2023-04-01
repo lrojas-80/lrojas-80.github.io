@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+.titulo-testimonio{
+  max-width: 1440px;
+  font-size: 2.5em;
+  font-weight: 700;
+  left: 1.1;
+  margin: 40px 0;
+  }
+
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.contenedor-principal {
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
