@@ -1,0 +1,144 @@
+:root{
+    --color-calculadora-light:#EBF5EE;
+    --color-calculadora-night:#564445;
+    --color-botones-number-light:#BFD1E5;
+    --color-botoner-operator:#D8BFAA;
+    --color-botoner-equal:#06D6A0;
+    --color-botoner-clear:#EF476F;
+
+    
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,700;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    transition: all 0.8s ease;
+  }
+  body {
+    background: linear-gradient(45deg, #f06291, #fffde7);
+  }
+  .container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .calculator {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(187, 130, 130);
+    background-color: var(--color-calculadora-light) ;
+   
+    #display {
+      color: #0a1e23;
+      margin: 0 10px;
+      height: 120px;
+      width: auto;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      font-size: 30px;
+      margin-bottom: 20px;
+      font-weight: 800;
+    }
+
+    #equal {
+      height: 130px;
+    }
+    #clear {
+      background-color: var(--color-botoner-clear);
+      color: #000;
+      
+    }
+    .btn-number {
+      background-color:var(--color-botones-number-light) /**#c3eaff*/;
+      color: #000000;
+    }
+    .btn-operator {
+      background-color: var(--color-botoner-operator)/*#ffd0fb*/;
+      color: #B66D0D;
+    }
+    .btn-equal {
+      background-color: var(--color-botoner-equal)/*#adf9e7*/;
+      color: #000;
+    }
+    /* dark theme */
+    &.dark {
+      background-color: #1B1B1B;
+      #display {
+          color: #f8fafb;
+      }
+      #clear {
+          background-color: #4C35AA;
+          color: white;
+      }
+      .btn-number {
+          background-color: #8EFDA6;
+          color: black;
+          font-weight: 600;
+      }
+      .btn-operator {
+          background-color: #F0DB4F;
+          color: #aa00a4;
+      }
+      .btn-equal {
+          background-color: #F23B00;
+          color: #ffffff;
+      }
+    }
+  }
+
+  .theme-toggler .toggler-icon{
+    font-size: 20px;
+  }
+  .theme-toggler {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  
+    color: #333;
+    cursor: pointer;
+    z-index: 1;
+ 
+    &::before {
+  
+      content:'';
+      position: absolute;
+   
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 40%;
+      background-color: #333;
+      z-index: -1;
+    }
+  }
+  .theme-toggler.active {
+    color: #fff;
+    &::before {
+      background-color: #333;
+    }
+  }
+  button {
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }

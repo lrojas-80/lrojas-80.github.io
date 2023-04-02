@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/calculadora.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+   
+</head>
+<body>
+    <div class="container">
+     <div class="calculator dark">
+        <div class="theme-toggler active">
+            <i class="toggler-icon fa-solid fa-circle-half-stroke"></i>
+        </div>
+        <div class="display-screen">
+            <div id="display"></div>
+        </div>
+        <div class="buttons">
+            <table>
+                <tr>
+                    <td><button class="btn-operator" id="clear"><i class="fa-sharp fa-solid fa-trash"></i></i></button></td>
+                    <td><button class="btn-operator" id="/"><i class="fa-solid fa-divide"></i></button></td>
+                    <td><button class="btn-operator" id="*"><i class="fa-solid fa-xmark"></i></button></td>
+                    <td><button class="btn-operator" id="backspace"><i class="fa-solid fa-delete-left"></i></button></td>
+
+                </tr>
+                <tr>
+                    <td><button class="btn-number" id="7">7</button></td>
+                    <td><button class="btn-number" id="8">8</button></td>
+                    <td><button class="btn-number" id="9">9</button></td>
+                    <td><button class="btn-operator" id="-"><i class="fa-solid fa-minus"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn-number" id="4">4</button></td>
+                    <td><button class="btn-number" id="5">5</button></td>
+                    <td><button class="btn-number" id="6">6</button></td>
+                    <td><button class="btn-operator" id="+"><i class="fa-solid fa-plus"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn-number" id="1">1</button></td>
+                    <td><button class="btn-number" id="2">2</button></td>
+                    <td><button class="btn-number" id="3">3</button></td>
+                    <td rowspan="2"><button class="btn-equal" id="equal"><i class="fa-solid fa-equals"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn-operator" id=".">.</button></td>
+                    <td><button class="btn-number" id="0">0</button></td>
+                    <td><button class="btn-operator" id="00">00</button></td>
+                </tr>
+            </table>
+        </div>
+
+     </div>
+
+    </div>
+     <script src="scrips.js"></script>
+</body>
+</html>
