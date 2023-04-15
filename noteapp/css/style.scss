@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,700;1,900&display=swap");
+/*
+body{
+    margin: 0;
+    background: linear-gradient(to left, pink, yellow);
+}
+.heading{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 35px;
+}
+.info-text{
+    text-align: center;
+    font-size: 18px;
+}
+.app{
+    display: grid;
+    grid-template-columns: repeat(autofill,300px);
+    gap: 40px;
+    justify-content: center;
+    padding: 50px;
+}
+.note{
+    padding: 17px;
+    border-radius: 15px;
+    resize: none;
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+    font-size: 18px;
+    height: 200px;
+    color: black;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,.1);
+    box-sizing: border-box;
+}
+.note::placeholder{
+    color: gray;
+    opacity: 30%;
+}
+.note:hover, .note:focus{
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    transition: all 300ms ease;
+} 
+.btn{
+    height: 200px;
+    border-color: rgba(255,255,255,0.37);
+    background:rgba(255,255,255,0.27);
+    border-radius: 15px;
+    font-size: 70px;
+    font-weight: 700;
+    color: rgba(0,0,0,.3);
+    cursor: pointer;
+
+}
+.btn:hover{
+    background: rgba(255,255,255,0.55);
+    color: rgba(0,0,0,.6);
+    transition: all 300ms ease;
+}
+*/
+body {
+    margin: 0;
+    background: linear-gradient(90deg, rgba(63,3,153,0.7791491596638656) 0%, rgba(218,132,220,0.4654236694677871) 100%);
+    font-family: "Lato",Arial, Helvetica, sans-serif;
+  }
+  
+  .heading {
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 50px;
+  }
+  
+  .info-text {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+  }
+  
+  .app {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 40px;
+    justify-content: center;
+    padding: 50px;
+  }
+  
+  .note {
+    padding: 17px;
+    border-radius: 15px;
+    resize: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    height: 200px;
+    color: black;
+    font-family: 'Lato',Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+  }
+  
+  .note::placeholder {
+    color: lightgray;
+    opacity: 30%;
+  }
+  
+  .note:hover,
+  .note:focus {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    transition: all 300ms ease;
+  }
+  
+  .btn{
+      height: 200px;
+      text-align:center;
+      border-color: rgba(255, 255, 255, 0.37);
+      background: rgba(255, 255, 255, 0.27);
+      border-radius: 15px;
+      font-size: 70px;
+      font-weight: 700;
+      color: rgba(0, 0, 0, 0.7);
+      cursor: pointer;
+  }
+  
+  .btn:hover{
+      background: rgba(255, 255, 255, 0.25);
+      color: rgba(0, 0, 0, 0.8);
+      transition: all 300ms ease;
+  }
